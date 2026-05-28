@@ -25,6 +25,12 @@
   color: #ffffff;
 }
 
+.input-group {
+  max-width: 420px;
+  width: 100%;
+  min-width: 0;
+}
+
 .weather-icon,
 .future-icon {
   width: 96px;
