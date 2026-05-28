@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+ï»¿import React, { useEffect, useState } from 'react'
 import './Weatherpage.css'
 import axios from 'axios'
 import { FaTemperatureHalf } from 'react-icons/fa6'
@@ -102,7 +102,7 @@ function Weatherpage() {
                 </h5>
                 <h6 className='card-title'>Temperature</h6>
                 <p className='card-text display-6 mb-0'>
-                  {data ? Math.round(data.main.temp - 273.15) : '--'}°C
+                  {data ? Math.round(data.main.temp - 273.15) : '--'} C
                 </p>
               </div>
             </div>
@@ -144,7 +144,7 @@ function Weatherpage() {
                 </h5>
                 <h6 className='card-title'>Wind Direction</h6>
                 <p className='card-text display-6 mb-0'>
-                  {data?.wind?.deg ?? '--'}°
+                  {data?.wind?.deg ?? '--'} deg
                 </p>
               </div>
             </div>
@@ -167,7 +167,7 @@ function Weatherpage() {
                       <p className='small text-muted'>
                         {new Date(item.dt * 1000).toLocaleString()}
                       </p>
-                      <p className='mb-1'>Temp: {Math.round(item.main.temp - 273.15)}°C</p>
+                      <p className='mb-1'>Temp: {Math.round(item.main.temp - 273.15)} C</p>
                       <p className='mb-1 text-capitalize'>Weather: {item.weather[0].description}</p>
                       <p className='mb-0'>Humidity: {item.main.humidity}%</p>
                     </div>
