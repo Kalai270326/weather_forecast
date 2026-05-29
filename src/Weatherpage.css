@@ -82,17 +82,27 @@
     border-radius: 0 0 0.65rem 0.65rem;
   }
 }
-
-
-@media (max-width: 378px) {
+@media (min-width: 425px) {
   .input-group {
-    width: 120px;
-    max-width: 75%;
+    width: 200px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
 
   .input-group .form-control {
     width: 50%;
+  }
+}
+@media (max-width: 378px) {
+  .input-group {
+    width: 100px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .input-group .form-control {
+    width: 30%;
   }
 }
