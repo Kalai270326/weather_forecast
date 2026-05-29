@@ -82,7 +82,7 @@
     border-radius: 0 0 0.65rem 0.65rem;
   }
 }
-@media (max-width: 425px) {
+@media (min-width: 425px) {
   .input-group{
     width: 50px;
   }
