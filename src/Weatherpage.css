@@ -82,7 +82,8 @@
     border-radius: 0 0 0.65rem 0.65rem;
   }
 }
-@media (min-width: 425px) {
+
+@media (max-width: 425px) {
   .input-group {
     width: 200px;
     max-width: 100%;
@@ -91,18 +92,47 @@
   }
 
   .input-group .form-control {
-    width: 50%;
+    width: 100%;
   }
 }
-@media (max-width: 378px) {
-  .input-group {
-    width: 100px;
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
-  .input-group .form-control {
-    width: 30%;
-  }
+.top-controls {
+  align-items: flex-start;
+}
+
+.search-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.unit-toggle .btn {
+  min-width: 56px;
+}
+
+.status-message {
+  color: #fff8c2;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.85rem;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.status-message.error {
+  color: #ffcece;
+  border-color: rgba(255, 110, 110, 0.3);
+}
+
+.weather-times {
+  gap: 1.5rem;
 }
