@@ -67,7 +67,7 @@ function Weatherpage() {
             <h6 className='mb-0'>Weather App</h6>
           </div>
 
-          <div className='input-group shadow-sm w-100 w-md-auto'>
+          <div className='input-group shadow-sm w-50 w-md-auto'>
             <input
               type='text'
               value={inputvalue}
